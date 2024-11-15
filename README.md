@@ -18,6 +18,9 @@
 
 **注意所有软件版本要一致**
 
+### 编译好的镜像包（基于MT41K128M16JT-125:k内存颗粒，已经复制了网卡文件）
+
+
 ### 1.在vivado中配置最小系统
 
 ![image-20200904100950872](https://i.loli.net/2020/09/04/DO615panGKwMgCU.png)
@@ -104,9 +107,4 @@ PREBUILT=bionic.arm.2.5.img
 ### 注意事项
 
 可能会有网卡不能启动的问题，将PYNQ/sdbuild/packages/ethernet下的eth0复制到板子系统的/etc/network/interfaces.d目录下重启即可，jupyter默认在9090端口，用户名和密码为xilinx
-
-我将自己编译好的镜像上传到云盘可自行下载测试
-
-链接：https://pan.baidu.com/s/1HbiiMz_5l4CoHDzb7_j66Q 
-提取码：rmr6
 
